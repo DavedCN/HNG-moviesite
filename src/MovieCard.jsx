@@ -39,7 +39,11 @@ const MovieCard = ({
           {/* <div className="tv-series">
                   <b className="conditions-of-use">TV SERIES</b>
                   </div> */}
-          <img className="favorite-icon" alt="" src="/undefined8.png" />
+          <img
+            className="favorite-icon"
+            alt=""
+            src={process.env.PUBLIC_URL + "/undefined8.png"}
+          />
         </div>
       </div>
       <p className="movie-card-details" data-testid="movie-release-date">
@@ -50,11 +54,19 @@ const MovieCard = ({
       </p>
       <div className="movie-card-ratings">
         <div className="imdb">
-          <img className="imdb-icon" alt="" src="/undefined3.png" />
+          <img
+            className="imdb-icon"
+            alt=""
+            src={process.env.PUBLIC_URL + "/undefined3.png"}
+          />
           <div className="imdb-rating">86.0 / 100</div>
         </div>
         <div className="rotten-tomatoes">
-          <img className="rotten-tomatoes-icon" alt="" src="/undefined4.png" />
+          <img
+            className="rotten-tomatoes-icon"
+            alt=""
+            src={process.env.PUBLIC_URL + "/undefined4.png"}
+          />
           <div className="rotten-tomatoes-rating">97%</div>
         </div>
       </div>

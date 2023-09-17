@@ -33,6 +33,7 @@ section {
   margin-bottom: 4rem;
 }
 
+
 // HOME PAGE BREAKPOINTS
 @media screen and (max-width: 1300px) {
   .featured-movie {
@@ -81,6 +82,7 @@ section {
 
       .logo {
         column-gap: $mb-0-5;
+     
 
         &-icon {
           width: 25px;
@@ -193,7 +195,6 @@ section {
         }
       }
 
-     
       button {
         padding: 4px 14px;
         max-width: 150px;
