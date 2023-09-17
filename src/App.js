@@ -114,9 +114,9 @@ const App = () => {
             />
           </div>
           <div className="navbar">
-            <div className="logo">
+            <div className="logo ">
               <img className="logo-icon" alt="" src="/undefined2.png" />
-              <b className="sign-in">MovieBox</b>
+              <b className="sign-in ">MovieBox</b>
             </div>
             <div className="search">
               <input
@@ -226,7 +226,7 @@ const App = () => {
             <b className="link">{`Privacy & Policy`}</b>
             <b className="link">Press Room</b>
           </div>
-          <p className="copyright">© 2023 MovieBox by Favour Ogbanu</p>
+          <p className="copyright">© 2023 MovieBox by David Nnadozie</p>
         </footer>
       </div>
 
