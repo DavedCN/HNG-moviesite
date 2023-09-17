@@ -29,7 +29,7 @@ const MoviePage = ({
           <img
             className="moviePosterImg"
             src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`}
-            alt="MOvie Poster"
+            alt="Movie Poster"
           />
         </div>
 
