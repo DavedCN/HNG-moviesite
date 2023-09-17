@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/HNG-moviesite/static/css/main.b0a8b851.css",
-    "main.js": "/HNG-moviesite/static/js/main.6fda55d7.js",
+    "main.js": "/HNG-moviesite/static/js/main.92721bcc.js",
     "static/media/Playlist.png": "/HNG-moviesite/static/media/Playlist.16c3ae0911738c125d9c.png",
     "static/media/tv.svg": "/HNG-moviesite/static/media/tv.73c9a66d37f2193cbe3b46abadf1d928.svg",
     "index.html": "/HNG-moviesite/index.html",
     "main.b0a8b851.css.map": "/HNG-moviesite/static/css/main.b0a8b851.css.map",
-    "main.6fda55d7.js.map": "/HNG-moviesite/static/js/main.6fda55d7.js.map"
+    "main.92721bcc.js.map": "/HNG-moviesite/static/js/main.92721bcc.js.map"
   },
   "entrypoints": [
     "static/css/main.b0a8b851.css",
-    "static/js/main.6fda55d7.js"
+    "static/js/main.92721bcc.js"
   ]
 }
