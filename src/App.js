@@ -226,7 +226,7 @@ const App = () => {
             <b className="link">{`Privacy & Policy`}</b>
             <b className="link">Press Room</b>
           </div>
-          <p className="copyright">© 2023 MovieBox by Favour Ogbanu</p>
+          <p className="copyright">© 2023 MovieBox by David Nnadozie</p>
         </footer>
       </div>
 
