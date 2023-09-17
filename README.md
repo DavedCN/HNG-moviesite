@@ -10,4 +10,6 @@ To run this project:
 
 
 npm install //To install dependencies
+
+
 npm start // To launch it
