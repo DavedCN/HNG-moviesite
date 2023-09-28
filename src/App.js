@@ -3,7 +3,6 @@ import MovieCard from "./MovieCard";
 import Load from "./Load";
 import MoviePage from "./MoviePage";
 
-
 const options = {
   method: "GET",
   headers: {
@@ -116,7 +115,11 @@ const App = () => {
           </div>
           <div className="navbar">
             <div className="logo">
-              <img className="logo-icon" alt="" src={process.env.PUBLIC_URL + '/undefined2.png'} />
+              <img
+                className="logo-icon"
+                alt=""
+                src={process.env.PUBLIC_URL + "/undefined2.png"}
+              />
               <b className="sign-in ">MovieBox</b>
             </div>
             <div className="search">
@@ -145,7 +148,11 @@ const App = () => {
             </div>
             <div className="menu">
               <b className="sign-in">Sign in</b>
-              <img className="menu-icon" alt="" src={process.env.PUBLIC_URL + '/undefined1.png'} />
+              <img
+                className="menu-icon"
+                alt=""
+                src={process.env.PUBLIC_URL + "/undefined1.png"}
+              />
             </div>
           </div>
 
@@ -153,14 +160,18 @@ const App = () => {
             <b className="description-box-title">{displayMovie?.title}</b>
             <div className="description-rating">
               <div className="imdb">
-                <img className="imdb-icon" alt="" src={process.env.PUBLIC_URL + '/undefined3.png'} />
+                <img
+                  className="imdb-icon"
+                  alt=""
+                  src={process.env.PUBLIC_URL + "/undefined3.png"}
+                />
                 <div className="imdb-rating">86.0 / 100</div>
               </div>
               <div className="rotten-tomatoes">
                 <img
                   className="rotten-tomatoes-icon"
                   alt=""
-                  src={process.env.PUBLIC_URL + '/undefined4.png'}
+                  src={process.env.PUBLIC_URL + "/undefined4.png"}
                 />
                 <div className="div">97%</div>
               </div>
@@ -169,7 +180,11 @@ const App = () => {
               {displayMovie?.overview}
             </div>
             <button className="button" autoFocus={true} preload="auto">
-              <img className="play-icon" alt="" src={process.env.PUBLIC_URL + '/undefined5.png'} />
+              <img
+                className="play-icon"
+                alt=""
+                src={process.env.PUBLIC_URL + "/undefined5.png"}
+              />
               <b className="btn-text">Watch trailer</b>
             </button>
           </div>
@@ -189,7 +204,11 @@ const App = () => {
             <p className="featured-title">Featured Movie</p>
             <div className="see-more">
               <div className="see-more-text">See more</div>
-              <img className="see-more-icon" alt="" src={process.env.PUBLIC_URL + '/undefined6.png'} />
+              <img
+                className="see-more-icon"
+                alt=""
+                src={process.env.PUBLIC_URL + "/undefined6.png"}
+              />
             </div>
           </div>
 
@@ -217,17 +236,37 @@ const App = () => {
 
         <footer className="footer">
           <div className="social">
-            <img className="social-icon" alt="" src={process.env.PUBLIC_URL + '/undefined24.png'} />
-            <img className="social-icon" alt="" src={process.env.PUBLIC_URL + '/undefined25.png'} />
-            <img className="social-icon" alt="" src={process.env.PUBLIC_URL + '/undefined26.png'}/>
-            <img className="social-icon" alt=""src={process.env.PUBLIC_URL + '/undefined27.png'} />
+            <img
+              className="social-icon"
+              alt=""
+              src={process.env.PUBLIC_URL + "/undefined24.png"}
+            />
+            <img
+              className="social-icon"
+              alt=""
+              src={process.env.PUBLIC_URL + "/undefined25.png"}
+            />
+            <img
+              className="social-icon"
+              alt=""
+              src={process.env.PUBLIC_URL + "/undefined26.png"}
+            />
+            <img
+              className="social-icon"
+              alt=""
+              src={process.env.PUBLIC_URL + "/undefined27.png"}
+            />
           </div>
           <div className="links">
             <b className="link">Conditions of Use</b>
             <b className="link">{`Privacy & Policy`}</b>
             <b className="link">Press Room</b>
           </div>
-          <p className="copyright">© 2023 MovieBox by David Nnadozie</p>
+         
+         <div className="copyright"> <a href={"https://github.com/DavedCN"} target="_blank" >
+                                &copy; 2023 MovieBox by David Nnadozie
+          </a></div>
+         
         </footer>
       </div>
 

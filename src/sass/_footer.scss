@@ -15,9 +15,15 @@ footer {
     &-icon {
       width: 24px;
       height: 24px;
+      cursor: pointer;
       object-fit: cover;
+
+      &:hover {
+        opacity: 70%;
+      }
     }
   }
+
   .links {
     display: flex;
     gap: 2rem;
@@ -25,5 +31,12 @@ footer {
   .copyright {
     color: $gray-500;
     font-weight: 600;
+
+    & a {
+      font-size: inherit;
+      display: initial;
+      color: inherit;
+      padding: inherit;
+    }
   }
 }

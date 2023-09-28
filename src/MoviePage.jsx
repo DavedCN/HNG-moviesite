@@ -12,7 +12,6 @@ const MoviePage = ({
   selectedMovieId,
 }) => {
   const movie = moviess?.find((m) => m.id === selectedMovieId);
-  console.log(movie);
 
   const handleLogoutClick = () => {
     //Logout click to be passed to sidebar
@@ -22,7 +21,7 @@ const MoviePage = ({
 
   return (
     <div className={`moviePageMain ${visible ? "visible" : ""}`}>
-      <SideBar logoutClick={handleLogoutClick} />
+      {/* DISCONTINUED FEATURE <SideBar logoutClick={handleLogoutClick} /> */}
 
       <div className="moviePage">
         <div className="moviePoster">

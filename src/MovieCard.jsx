@@ -4,7 +4,7 @@ import { useState } from "react";
 import MoviePage from "./MoviePage";
 
 const MovieCard = ({
-  key,
+
   movie,
   genreMap,
   toggleHomepage,
