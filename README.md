@@ -9,7 +9,8 @@ This was a Project I built for my stage Two HNG task built with
 - **Sass**
   
 
-## Live at : https://davedcn.github.io/HNG-moviesite/
+## Live at :
+https://davedcn.github.io/HNG-moviesite/
 
 
 ## To run this project
