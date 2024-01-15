@@ -1,23 +1,25 @@
 import React from "react";
-import SideBar from "./SideBar";
-import Playlist from "./Playlist.png";
-import YouTube from "react-youtube";
-import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
-const MoviePage = ({
-  moviess,
-  visible,
-  toggleHomepage,
-  toggleMoviePage,
-  selectedMovieId,
-}) => {
+import Playlist from "../Playlist.png";
+
+// import YouTube from "react-youtube";
+
+const MoviePage = ({ moviess, visible, selectedMovieId }) => {
   const movie = moviess?.find((m) => m.id === selectedMovieId);
 
-  const handleLogoutClick = () => {
-    //Logout click to be passed to sidebar
-    toggleHomepage(); // Toggle the homepage visibility
-    toggleMoviePage(); // Toggle the moviePageMain visibility
-  };
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleUrl = () => {
+      navigate(`/movie/${movie?.id}`);
+    };
+
+    if (movie?.id) {
+      handleUrl();
+    }
+  }, [movie, navigate]);
 
   return (
     <div className={`moviePageMain ${visible ? "visible" : ""}`}>
@@ -37,7 +39,7 @@ const MoviePage = ({
       <div className="movieinfo">
         <div className="movierow1">
           <p className="title">
-            {movie?.title} &nbsp; • &nbsp; {movie?.release_date.slice(0, 4)}{" "}
+            {movie?.title} &nbsp; • &nbsp; {movie?.release_date.slice(0, 4)}
             &nbsp; • &nbsp; PG-13 &nbsp; • &nbsp; 2h 10m
             <span className="genre">Action</span>
             <span className="genre">Drama</span>

@@ -2,17 +2,10 @@ import { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
 import Load from "./Load";
 import MoviePage from "./MoviePage";
+import { options } from "../APIkey/apikey";
 
-const options = {
-  method: "GET",
-  headers: {
-    accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNmQ3ZjhiYzExMTZhMTE2NTA3YWExMjc5NjExM2JlMSIsInN1YiI6IjY0ZmVkMDUyNmEyMjI3MDBmZDFmNmFjMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Msv8O-DIkK0ShMSanzX7xy3AD_51QBn1HJ1jI3OLnI0",
-  },
-};
 
-const App = () => {
+export const HomePage = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [isloading, setIsLoading] = useState(false); //state of Loading
@@ -262,15 +255,18 @@ const App = () => {
             <b className="link">{`Privacy & Policy`}</b>
             <b className="link">Press Room</b>
           </div>
-         
-         <div className="copyright"> <a href={"https://github.com/DavedCN"} target="_blank" >
-                                &copy; 2023 MovieBox by David Nnadozie
-          </a></div>
-         
+
+          <div className="copyright">
+           
+            <a href={"https://github.com/DavedCN"} target="_blank" rel="noreferrer">
+              &copy; 2023 MovieBox by David Nnadozie
+            </a>
+          </div>
         </footer>
       </div>
 
       <MoviePage
+      
         moviess={movies}
         visible={isMoviePageVisible}
         toggleHomepage={toggleHomepageVisibility}
@@ -282,4 +278,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default HomePage;

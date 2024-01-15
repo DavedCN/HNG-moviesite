@@ -1,10 +1,6 @@
 import React from "react";
-import { useState } from "react";
-
-import MoviePage from "./MoviePage";
 
 const MovieCard = ({
-
   movie,
   genreMap,
   toggleHomepage,
@@ -29,9 +25,9 @@ const MovieCard = ({
         <img
           className="poster-img"
           src={
-            movie.poster_path == null
+            movie.poster_path === null
               ? "https://fakeimg.pl/400x400?text=No+Image"
-              : `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+              : `https://image.tmdb.org/t/p/w500/${movie?.poster_path}`
           }
           alt={movie.title}
         />
