@@ -9,7 +9,7 @@ This was a Project I built for my stage Two HNG task built with
 - **Sass**
 
 
-<img width="369" alt="image" src="https://github.com/DavedCN/HNG-moviesite/assets/108531027/c2f0c7c1-4e15-4a25-a13b-bc1b38fca147">
+<img width="500" alt="image" src="https://github.com/DavedCN/HNG-moviesite/assets/108531027/c2f0c7c1-4e15-4a25-a13b-bc1b38fca147">
 
   
 
